@@ -1,0 +1,108 @@
+@import 'https://fonts.googleapis.com/css?family=Share+Tech+Mono';
+@font-face {
+  font-family: 'Digital';
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot');
+  src: url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/8e22783d707ad140bffe18b2a3812529.svg#Digital-7')
+      format('svg');
+}
+
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#cal{
+  height:100vh;
+  width: 100vw;
+  background-image: url("https://media.istockphoto.com/vectors/twisted-colored-numbers-on-white-background-vector-id1005045506");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#box{
+  height: 420px;
+  width: 330px;
+  background-color: dimgray;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 1px;
+  border: 10px solid darkslateblue;
+  border-radius: 10px;
+}
+
+#display{
+  grid-column: 1/5;
+  background-color: gray;
+  font-size: 27px;
+  font-family: digital;
+  border: 10px solid dimgray;
+  text-align: right;
+  padding-right: 5px;
+ }
+
+button{
+  color:red;
+  outline: none;
+  font-size: 20px;
+  
+}
+#clear{
+  grid-column: 1/3;
+  background-color: red;
+  color: white;
+}
+#zero{
+  grid-column: 1/3
+}
+#equals{
+  grid-column: 4/5;
+  grid-row: 5/7;
+  background-color: blue;
+  color: white;
+}
+
+#by{
+  font-size: 18px;
+  text-align: center;
+  margin: 20px;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-size: 23px;
+}
+span{
+  background-color:white;
+}
+.pressed{
+  color: green;
+  background-color: #FE6A76;
+}
+
+@media (max-width: 419px){
+  #box{
+  height: 380px;
+  width: 265px;
+  grid-gap: 1px;
+}
+  #display{
+  font-size: 21px;
+ }
+  button{
+  font-size: 18px;
+  
+}
+}
