@@ -1,3 +1,6 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 const numbers = {
   "zero": "0",
   "one": "1",
